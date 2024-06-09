@@ -1,0 +1,80 @@
+.completed {
+    display: flex;
+    flex-direction: column;
+}
+
+.completed-head {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.completed-tasks {
+    width: 80%;
+    padding: 15px;
+}
+
+.completed-tasks-not-found {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5670ff;
+}
+
+.completed-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.completed-task-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.completed-task-check {
+    width: 20px;
+    height: 20px;
+}
+
+.completed-task-name {
+    color: #474747;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.completed-task-name:hover {
+    text-decoration: underline;
+}
+
+.completed-task-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.completed-task-option {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .completed-tasks {
+        width: 90%;
+        padding: 15px 0px;
+    }
+
+    .completed-task {
+        gap: 5px;
+        padding: 10px 5px;
+    }
+}

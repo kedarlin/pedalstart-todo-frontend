@@ -1,0 +1,90 @@
+.tomorrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.tomorrow-head {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.tomorrow-date {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tomorrow-date span {
+    color: #7b7b7b;
+}
+
+.tomorrow-tasks {
+    width: 80%;
+    padding: 15px;
+}
+
+.tomorrow-tasks-not-found {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5670ff;
+}
+
+.tomorrow-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tomorrow-task-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.tomorrow-task-check {
+    width: 20px;
+    height: 20px;
+}
+
+.tomorrow-task-name {
+    color: #474747;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tomorrow-task-name:hover {
+    text-decoration: underline;
+}
+
+.tomorrow-task-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.tomorrow-task-option {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .tomorrow-tasks {
+        width: 90%;
+        padding: 15px 0px;
+    }
+
+    .tomorrow-task {
+        gap: 5px;
+        padding: 10px 5px;
+    }
+}

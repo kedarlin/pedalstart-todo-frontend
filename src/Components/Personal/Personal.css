@@ -1,0 +1,80 @@
+.personal {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-head {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.personal-tasks {
+    width: 80%;
+    padding: 15px;
+}
+
+.personal-tasks-not-found {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5670ff;
+}
+
+.personal-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.personal-task-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.personal-task-check {
+    width: 20px;
+    height: 20px;
+}
+
+.personal-task-name {
+    color: #474747;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.personal-task-name:hover {
+    text-decoration: underline;
+}
+
+.personal-task-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.personal-task-option {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .personal-tasks {
+        width: 90%;
+        padding: 15px 0px;
+    }
+
+    .personal-task {
+        gap: 5px;
+        padding: 10px 5px;
+    }
+}
